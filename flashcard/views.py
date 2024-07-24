@@ -9,7 +9,7 @@ from django.contrib import auth
 def novo_flashcard(request):
 
     if not request.user.is_authenticated:
-        return redirect('/usuarios/logar')
+        return redirect('/usuarios/logar/cadastrar')
     
     # Se a requisição for pela URL:
     if request.method == 'GET':
